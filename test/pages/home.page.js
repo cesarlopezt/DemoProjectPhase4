@@ -1,10 +1,6 @@
 const Page = require("./page.js");
 
 class HomePage extends Page {
-    // constructor() {
-    //     super.constructor();
-    //     this.solutionMenu = $("#menu-item-3240");
-    // }
     get solutionMenu() {
         return $("#menu-item-3240");
     }
@@ -19,7 +15,7 @@ class HomePage extends Page {
         return $("#menu-item-353");
     }
     get careers() {
-        return $("#menu-item-475");
+        return $("#menu-item-475 a");
     }
 
     get innovationSquad() {
@@ -119,7 +115,7 @@ class HomePage extends Page {
     goToAgentOfChange() {
         this.open();
         this.solutionMenu.click();
-        this.iTNetwork.click();
+        this.agentOfChangeStaff.click();
     }
 
     goToAboutUs() {
@@ -134,7 +130,7 @@ class HomePage extends Page {
         this.pointOfDifferentiation.click();
     }
 
-    goToAboutUs() {
+    goToBlog() {
         this.open();
         this.whoWeAreMenu.click();
         this.blog.click();
