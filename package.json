@@ -1,28 +1,28 @@
 {
-  "name": "DemoProjectPhase4",
-  "version": "1.0.0",
-  "description": "Now using WebDriverIO and JS",
-  "main": "wdio.conf.js",
-  "directories": {
-    "test": "test"
-  },
-  "dependencies": {
-    "chromedriver": "^83.0.0",
-    "wdio-chromedriver-service": "^6.0.3"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "mocha"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/calt08/DemoProjectPhase4.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/calt08/DemoProjectPhase4/issues"
-  },
-  "homepage": "https://github.com/calt08/DemoProjectPhase4#readme"
+    "name": "DemoProjectPhase4",
+    "version": "1.0.0",
+    "description": "Now using WebDriverIO and JS",
+    "main": "wdio.conf.js",
+    "directories": {
+        "test": "test"
+    },
+    "dependencies": {
+        "chromedriver": "^83.0.0",
+        "wdio-chromedriver-service": "^6.0.3"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "npx wdio wdio.conf.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/calt08/DemoProjectPhase4.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/calt08/DemoProjectPhase4/issues"
+    },
+    "homepage": "https://github.com/calt08/DemoProjectPhase4#readme"
 }
