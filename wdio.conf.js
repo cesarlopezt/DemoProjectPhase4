@@ -6,7 +6,7 @@ exports.config = {
     //
     // WebdriverIO allows it to run your tests in arbitrary locations (e.g. locally or
     // on a remote machine).
-    runner: "local",
+    runner: "remote",
     //
     // ==================
     // Specify Test Files
@@ -97,6 +97,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
+
     baseUrl: "http://localhost",
     //
     // Default timeout for all waitFor* commands.
