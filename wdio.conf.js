@@ -21,15 +21,15 @@ exports.config = {
     exclude: [
         // 'path/to/excluded/files'
     ],
-    services: ["docker", "chromedriver"],
-    dockerOptions: {
-        image: "atools/chrome-headless:java8-node12-latest",
-        healthCheck: "http://localhost:4444",
-        options: {
-            p: ["4444:4444"],
-            shmSize: "2g",
-        },
-    },
+    services: ["chromedriver"],
+    // dockerOptions: {
+    //     image: "atools/chrome-headless:java8-node12-latest",
+    //     healthCheck: "http://localhost:4444",
+    //     options: {
+    //         p: ["4444:4444"],
+    //         shmSize: "2g",
+    //     },
+    // },
     //
     // ============
     // Capabilities
