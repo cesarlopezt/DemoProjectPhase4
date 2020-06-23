@@ -59,7 +59,7 @@ exports.config = {
 
             browserName: "chrome",
             "goog:chromeOptions": {
-                args: ["headless", "disable-gpu", "--disable-dev-shm-usage"],
+                args: ["--headless", "--disable-gpu", "--disable-dev-shm-usage"],
             },
         },
     ],
