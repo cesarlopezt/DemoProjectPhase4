@@ -67,7 +67,12 @@ exports.config = {
 
             browserName: "chrome",
             "goog:chromeOptions": {
-                args: ["--disable-infobars", "--window-size=1920,1440"],
+                args: [
+                    "headless",
+                    "disable-gpu",
+                    "--disable-infobars",
+                    "--window-size=1920,1440",
+                ],
             },
         },
     ],
