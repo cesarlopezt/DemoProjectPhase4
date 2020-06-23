@@ -53,12 +53,14 @@ exports.config = {
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
 
-    capabilities: [{
-        browserName: 'chrome',
-        'goog:chromeOptions': {
-          args: ['headless', 'disable-gpu'],
+    capabilities: [
+        {
+            browserName: "chrome",
+            "goog:chromeOptions": {
+                args: ["headless", "disable-gpu"],
+            },
         },
-      }],
+    ],
     // capabilities: [
     //     {
     //         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
@@ -80,7 +82,7 @@ exports.config = {
     //         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
     //         // excludeDriverLogs: ['bugreport', 'server'],
     //     },
-    ],
+    // ],
     //
     // ===================
     // Test Configurations
