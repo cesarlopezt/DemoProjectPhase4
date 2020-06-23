@@ -21,7 +21,7 @@ exports.config = {
     exclude: [
         // 'path/to/excluded/files'
     ],
-    services: ["docker", "chromedriver"],
+    services: ["docker"],
     dockerOptions: {
         image: "selenium/standalone-chrome",
         healthCheck: "http://localhost:4444",
@@ -98,7 +98,7 @@ exports.config = {
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
 
-    baseUrl: "http://gbh.com.do",
+    baseUrl: "http://localhost",
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
