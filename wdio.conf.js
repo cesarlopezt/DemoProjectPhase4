@@ -21,7 +21,7 @@ exports.config = {
     exclude: [
         // 'path/to/excluded/files'
     ],
-    services: ["chromedriver"],
+    // services: ["chromedriver"],
     // dockerOptions: {
     //     image: "atools/chrome-headless:java8-node12-latest",
     //     healthCheck: "http://localhost:4444",
@@ -59,10 +59,32 @@ exports.config = {
 
             browserName: "chrome",
             "goog:chromeOptions": {
-                args: ["headless", "disable-gpu", "--disable-dev-shm-usage"],
+                args: ["headless", "disable-gpu"],
             },
         },
     ],
+
+    services: [
+        [
+            "selenium-standalone",
+            {
+                logPath: "logs",
+                installArgs: {
+                    drivers: {
+                        chrome: { version: "83.0.4103.106" },
+                        // firefox: { version: "0.26.0" },
+                    },
+                },
+                args: {
+                    drivers: {
+                        chrome: { version: "83.0.4103.106" },
+                        // firefox: { version: "0.26.0" },
+                    },
+                },
+            },
+        ],
+    ],
+
     // capabilities: [
     //     {
     //         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
