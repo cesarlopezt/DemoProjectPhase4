@@ -1,4 +1,6 @@
 version: 2.1
+image: atools/chrome-headless:java8-node12-latest
+
 orbs:
     node: circleci/node@1.1.6
 jobs:
