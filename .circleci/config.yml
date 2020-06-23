@@ -5,8 +5,8 @@ orbs:
 jobs:
     build:
         docker:
-            - image: atools/chrome-headless:java8-node12-latest
-            # - image: circleci/node:12.2.0
+            # - image: atools/chrome-headless:java8-node12-latest
+            - image: circleci/node:12.2.0
         # build-and-test:
         executor:
             name: node/default
@@ -15,7 +15,7 @@ jobs:
             - node/with-cache:
                   steps:
                       - run: npm install
-                      # - run: sudo apt-get install libnss3-dev
+                      - run: sudo apt-get install libnss3-dev
                       - run: npm test
 workflows:
     build:
