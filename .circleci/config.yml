@@ -6,9 +6,9 @@ jobs:
     build:
         docker:
             - image: atools/chrome-headless:java8-node12-latest
-        build-and-test:
-            executor:
-                name: node/default
+        # build-and-test:
+        executor:
+            name: node/default
         steps:
             - checkout
             - node/with-cache:
@@ -17,6 +17,6 @@ jobs:
                       - run: sudo apt-get install libnss3-dev
                       - run: npm test
 workflows:
-    build-and-test:
+    build:
         jobs:
-            - build-and-test
+            - build
