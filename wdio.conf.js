@@ -6,7 +6,7 @@ exports.config = {
     //
     // WebdriverIO allows it to run your tests in arbitrary locations (e.g. locally or
     // on a remote machine).
-    runner: "remote",
+    runner: "local",
     //
     // ==================
     // Specify Test Files
@@ -21,7 +21,7 @@ exports.config = {
     exclude: [
         // 'path/to/excluded/files'
     ],
-    services: ["docker"],
+    services: ["docker", "chromedriver"],
     dockerOptions: {
         image: "selenium/standalone-chrome",
         healthCheck: "http://localhost:4444",
@@ -98,7 +98,7 @@ exports.config = {
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
 
-    baseUrl: "http://localhost",
+    baseUrl: "http://gbh.com.do",
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
