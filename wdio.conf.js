@@ -59,7 +59,6 @@ exports.config = {
           args: ['headless', 'disable-gpu'],
         },
       }],
-    };
     // capabilities: [
     //     {
     //         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
