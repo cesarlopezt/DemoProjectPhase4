@@ -10,7 +10,7 @@ jobs:
             - node/with-cache:
                   steps:
                       - run: npm install
-                      - run: sudo apt-get install libnss3-dev
+                      # - run: sudo apt-get install libnss3-dev
                       - run: npm test
 workflows:
     build-and-test:

@@ -23,7 +23,7 @@ exports.config = {
     ],
     services: ["docker", "chromedriver"],
     dockerOptions: {
-        image: "selenium/standalone-chrome",
+        image: "atools/chrome-headless:java8-node12-latest",
         healthCheck: "http://localhost:4444",
         options: {
             p: ["4444:4444"],
