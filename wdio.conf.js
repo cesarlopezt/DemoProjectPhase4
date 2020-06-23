@@ -21,7 +21,7 @@ exports.config = {
     exclude: [
         // 'path/to/excluded/files'
     ],
-    services: ["docker"],
+    services: ["docker", "chromedriver"],
     dockerOptions: {
         image: "selenium/standalone-chrome",
         healthCheck: "http://localhost:4444",
