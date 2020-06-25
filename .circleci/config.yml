@@ -5,14 +5,9 @@ orbs:
 jobs:
     build:
         docker:
-            # - image: atools/chrome-headless:java8-node12-latest
-            - image: circleci/node:12.2.0
-            - image: selenium/hub
-          name: hub
-            - image: selenium/node-firefox
+            - image: atools/chrome-headless:java8-node12-latest
+            # - image: circleci/node:12.2.0
             # - image: selenium/standalone-chrome
-            # - image: circleci/node:7.10
-
         # build-and-test:
         executor:
             name: node/default
