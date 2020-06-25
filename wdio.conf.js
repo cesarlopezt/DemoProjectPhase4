@@ -58,19 +58,20 @@ exports.config = {
             maxInstances: 3,
 
             browserName: "chrome",
-            // "goog:chromeOptions": {
-            //     args: [
-            //         "--headless",
-            //         // "start-maximized",
-            //         // "disable-infobars",
-            //         // "--disable-extensions",
-            //         // "disable-gpu",
-            //         "--disable-dev-shm-usage",
-            //         // "--no-sandbox",
-            //     ],
+            "goog:chromeOptions": {
+                useAutomationExtension: false,
+                args: [
+                    "--headless",
+                    // "start-maximized",
+                    // "disable-infobars",
+                    // "--disable-extensions",
+                    // "disable-gpu",
+                    "--disable-dev-shm-usage",
+                    // "--no-sandbox",
+                ],
 
-            //     // "headless",
-            // },
+                // "headless",
+            },
         },
     ],
 
