@@ -57,44 +57,67 @@ exports.config = {
         {
             maxInstances: 3,
 
-            browserName: "chrome",
-            "goog:chromeOptions": {
-                useAutomationExtension: false,
-                args: [
-                    "--headless",
-                    // "start-maximized",
-                    // "disable-infobars",
-                    // "--disable-extensions",
-                    // "disable-gpu",
-                    "--disable-dev-shm-usage",
-                    // "--no-sandbox",
-                ],
+            browserName: "firefox",
+            // "goog:chromeOptions": {
+            //     useAutomationExtension: false,
+            //     args: [
+            //         "--headless",
+            //         // "start-maximized",
+            //         // "disable-infobars",
+            //         // "--disable-extensions",
+            //         // "disable-gpu",
+            //         "--disable-dev-shm-usage",
+            //         // "--no-sandbox",
+            //     ],
 
-                // "headless",
-            },
+            //     // "headless",
+            // },
         },
     ],
 
-    services: [
-        [
-            "selenium-standalone",
-            {
-                logPath: "logs",
-                installArgs: {
-                    drivers: {
-                        chrome: { version: "83.0.4103.39" },
-                        // firefox: { version: "0.26.0" },
-                    },
-                },
-                args: {
-                    drivers: {
-                        chrome: { version: "83.0.4103.39" },
-                        // firefox: { version: "0.26.0" },
-                    },
-                },
-            },
-        ],
-    ],
+    // services: [
+    //     [
+    //         "selenium-standalone",
+    //         {
+    //             logPath: "logs",
+    //             installArgs: {
+    //                 drivers: {
+    //                     chrome: { version: "83.0.4103.39" },
+    //                     // firefox: { version: "0.26.0" },
+    //                 },
+    //             },
+    //             args: {
+    //                 drivers: {
+    //                     chrome: { version: "83.0.4103.39" },
+    //                     // firefox: { version: "0.26.0" },
+    //                 },
+    //             },
+    //         },
+    //     ],
+    // ],
+    // services: ["selenium-standalone"],
+
+    // seleniumInstallArgs: {
+    //     version: "3.141.5",
+    //     baseURL: "https://selenium-release.storage.googleapis.com",
+    //     drivers: {
+    //         chrome: {
+    //             version: "83.0.4103.39",
+    //             arch: process.arch,
+    //             baseURL: "https://chromedriver.storage.googleapis.com",
+    //         },
+    //     },
+    // },
+    // seleniumLogs: "./report/selenium-standalone.log",
+    // seleniumArgs: {
+    //     version: "3.141.5",
+    //     drivers: {
+    //         chrome: {
+    //             version: "83.0.4103.39",
+    //             arch: process.arch,
+    //         },
+    //     },
+    // },
 
     // capabilities: [
     //     {
