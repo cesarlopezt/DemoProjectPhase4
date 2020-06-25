@@ -60,12 +60,13 @@ exports.config = {
             browserName: "chrome",
             "goog:chromeOptions": {
                 args: [
-                    "start-maximized",
-                    "disable-infobars",
-                    "--disable-extensions",
-                    "disable-gpu",
+                    "--headless",
+                    // "start-maximized",
+                    // "disable-infobars",
+                    // "--disable-extensions",
+                    // "disable-gpu",
                     "--disable-dev-shm-usage",
-                    "--no-sandbox",
+                    // "--no-sandbox",
                 ],
 
                 // "headless",
