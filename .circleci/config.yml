@@ -7,10 +7,10 @@ jobs:
         docker:
             # - image: atools/chrome-headless:java8-node12-latest
             - image: circleci/node:12.2.0
+            - image: selenium/hub
             - image: selenium/node-firefox
             # - image: selenium/standalone-chrome
             # - image: circleci/node:7.10
-            # - image: selenium/hub
 
         # build-and-test:
         executor:
