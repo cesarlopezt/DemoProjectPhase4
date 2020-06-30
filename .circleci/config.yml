@@ -7,8 +7,8 @@ jobs:
         docker:
             # - image: tenjaa/java-chrome-nodejs
             #  atools/chrome-headless:java8-node12-latest
-            - image: circleci/node:12.2.0
-            #  - image: circleci/node:10.12-browsers
+            # - image: circleci/node:12.2.0
+            - image: circleci/node:10.12-browsers
             # - image: selenium/standalone-chrome-debug
             # - image: selenium/standalone-chrome
         # build-and-test:
