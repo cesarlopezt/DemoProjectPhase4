@@ -8,7 +8,7 @@ jobs:
             # - image: circleci/node:10.16.3
             - image: circleci/node:12.2.0
             - image: selenium/standalone-chrome-debug
-            # - image: tenjaa/java-chrome-nodejs
+            - image: tenjaa/java-chrome-nodejs
             #  atools/chrome-headless:java8-node12-latest
             # - image: circleci/node:10.12-browsers
             # - image: selenium/standalone-chrome
