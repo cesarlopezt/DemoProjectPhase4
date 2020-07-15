@@ -28,6 +28,7 @@ exports.config = {
                     "disable-gpu",
                     "--window-size=1920,1080",
                     "--start-maximized",
+                    "--headless",
                 ],
             },
         },
