@@ -7,16 +7,8 @@ exports.config = {
         // 'path/to/excluded/files'
     ],
     // services: ["chromedriver"],
-    // dockerOptions: {
-    //     image: "atools/chrome-headless:java8-node12-latest",
-    //     healthCheck: "http://localhost:4444",
-    //     options: {
-    //         p: ["4444:4444"],
-    //         shmSize: "2g",
-    //     },
-    // },
 
-    maxInstances: 1,
+    maxInstances: 3,
     capabilities: [
         {
             maxInstances: 3,
