@@ -8,7 +8,7 @@ exports.config = {
     ],
     // services: ["chromedriver"],
 
-    maxInstances: 3,
+    maxInstances: 1,
     capabilities: [
         {
             maxInstances: 3,
