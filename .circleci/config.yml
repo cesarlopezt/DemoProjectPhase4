@@ -5,10 +5,10 @@ orbs:
 jobs:
     build:
         docker:
-            # - image: circleci/node:10.16.3
             - image: circleci/node:12.2.0
-            - image: circleci/openjdk:11.0.3-jdk-stretch
             - image: selenium/standalone-chrome-debug
+            # - image: circleci/node:10.16.3
+            # - image: circleci/openjdk:11.0.3-jdk-stretch
             # - image: tenjaa/java-chrome-nodejs
             # - image: atools/chrome-headless:java8-node12-latest
             # - image: circleci/node:10.12-browsers
