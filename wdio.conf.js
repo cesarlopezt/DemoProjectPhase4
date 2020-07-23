@@ -11,7 +11,7 @@ exports.config = {
     maxInstances: 1,
     capabilities: [
         {
-            maxInstances: 3,
+            maxInstances: 1,
 
             browserName: "chrome",
             "goog:chromeOptions": {
@@ -20,32 +20,31 @@ exports.config = {
                     "disable-gpu",
                     "--window-size=1920,1080",
                     "--start-maximized",
-                    "--headless",
                 ],
             },
         },
     ],
 
-    services: ["selenium-standalone"],
-    //     [
-    //         "selenium-standalone",
-    //         {
-    //             logPath: "logs",
-    //             installArgs: {
-    //                 drivers: {
-    //                     chrome: { version: "83.0.4103.39" },
-    //                     // firefox: { version: "0.26.0" },
-    //                 },
-    //             },
-    //             args: {
-    //                 drivers: {
-    //                     chrome: { version: "83.0.4103.39" },
-    //                     // firefox: { version: "0.26.0" },
-    //                 },
-    //             },
-    //         },
-    //     ],
-    // ],
+    services: [
+        [
+            "selenium-standalone",
+            {
+                logPath: "logs",
+                installArgs: {
+                    drivers: {
+                        chrome: { version: "83.0.4103.39" },
+                        // firefox: { version: "0.26.0" },
+                    },
+                },
+                args: {
+                    drivers: {
+                        chrome: { version: "83.0.4103.39" },
+                        // firefox: { version: "0.26.0" },
+                    },
+                },
+            },
+        ],
+    ],
     logLevel: "info",
 
     bail: 0,
