@@ -30,12 +30,12 @@ exports.config = {
             "selenium-standalone",
             {
                 logPath: "logs",
-                installArgs: {
-                    drivers: {
-                        chrome: { version: "83.0.4103.39" },
-                        // firefox: { version: "0.26.0" },
-                    },
-                },
+                // installArgs: {
+                //     drivers: {
+                //         chrome: { version: "83.0.4103.39" },
+                //         // firefox: { version: "0.26.0" },
+                //     },
+                // },
                 args: {
                     drivers: {
                         chrome: { version: "83.0.4103.39" },
