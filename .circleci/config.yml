@@ -1,6 +1,7 @@
 version: 2.1
 orbs:
   node: circleci/node@1.1.6
+  sudo apt-get update
   # node: circleci/node@3.0.0
 
 jobs:
@@ -20,6 +21,8 @@ jobs:
             - checkout
             - node/with-cache:
                   steps:
+                      - run: sudo apt-get update
+                      - run: sudo apt-get install libnss3-dev
                       - run: npm install
                       - run: npm test
 
